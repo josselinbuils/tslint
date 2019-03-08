@@ -1,0 +1,19 @@
+{
+  "name": "@josselinbuils/tslint",
+  "version": "1.0.0",
+  "description": "My own TSLint rules.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/josselinbuils/tslint.git"
+  },
+  "keywords": [
+    "tslint"
+  ],
+  "author": "Josselin BUILS",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/josselinbuils/tslint/issues"
+  },
+  "homepage": "https://github.com/josselinbuils/tslint#readme"
+}
