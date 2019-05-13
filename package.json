@@ -1,6 +1,7 @@
 {
   "name": "@josselinbuils/tslint",
   "version": "1.0.0",
+  "author": "Josselin BUILS",
   "description": "My own TSLint rules.",
   "main": "index.js",
   "repository": {
@@ -10,10 +11,16 @@
   "keywords": [
     "tslint"
   ],
-  "author": "Josselin BUILS",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/josselinbuils/tslint/issues"
   },
-  "homepage": "https://github.com/josselinbuils/tslint#readme"
+  "homepage": "https://github.com/josselinbuils/tslint#readme",
+  "prettier": {
+    "quoteProps": "consistent",
+    "singleQuote": true
+  },
+  "devDependencies": {
+    "prettier": "^1.17.1"
+  }
 }

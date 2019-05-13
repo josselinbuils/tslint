@@ -4,56 +4,31 @@ module.exports.rules = {
   'binary-expression-operand-order': true,
   'callable-types': true,
   'class-name': true,
-  'comment-format': [
-    true,
-    'check-space',
-  ],
+  'comment-format': [true, 'check-space'],
   'curly': true,
   'cyclomatic-complexity': true,
   'deprecation': {
-    'severity': 'warn',
+    severity: 'warn'
   },
   'encoding': true,
   'eofline': true,
   'forin': true,
-  'import-blacklist': [
-    true,
-    'rxjs/Rx',
-  ],
+  'import-blacklist': [true, 'rxjs/Rx'],
   'import-spacing': true,
-  'indent': [
-    true,
-    'spaces',
-    2,
-  ],
-  'interface-name': [
-    true,
-    'never-prefix',
-  ],
+  'indent': [true, 'spaces', 2],
+  'interface-name': [true, 'never-prefix'],
   'interface-over-type-literal': true,
-  'jsdoc-format': [
-    true,
-    'check-multiline-start',
-  ],
+  'jsdoc-format': [true, 'check-multiline-start'],
   'label-position': true,
   'match-default-export-name': false,
-  'max-classes-per-file': [
-    true,
-    1,
-  ],
-  'max-file-line-count': [
-    true,
-    1500,
-  ],
-  'max-line-length': [
-    true,
-    120,
-  ],
+  'max-classes-per-file': [true, 1],
+  'max-file-line-count': [true, 1500],
+  'max-line-length': [true, 120],
   'member-access': false,
   'member-ordering': [
     true,
     {
-      'order': [
+      order: [
         'public-static-field',
         'protected-static-field',
         'private-static-field',
@@ -68,9 +43,9 @@ module.exports.rules = {
         'private-constructor',
         'public-instance-method',
         'protected-instance-method',
-        'private-instance-method',
-      ],
-    },
+        'private-instance-method'
+      ]
+    }
   ],
   'new-parens': true,
   'no-arg': true,
@@ -105,8 +80,8 @@ module.exports.rules = {
   'no-this-assignment': [
     true,
     {
-      'allow-destructuring': true,
-    },
+      'allow-destructuring': true
+    }
   ],
   'no-trailing-whitespace': true,
   'no-unnecessary-callback-wrapper': true,
@@ -117,27 +92,13 @@ module.exports.rules = {
   'no-use-before-declare': false,
   'no-var-keyword': true,
   'number-literal-format': true,
-  'object-literal-key-quotes': [
-    true,
-    'as-needed',
-  ],
+  'object-literal-key-quotes': [true, 'as-needed'],
   'object-literal-shorthand': true,
   'one-line': true,
   'one-variable-per-declaration': true,
-  'only-arrow-functions': [
-    true,
-    'allow-declarations',
-  ],
-  'ordered-imports': [
-    true,
-    {
-      'grouped-imports': true,
-    },
-  ],
-  'prefer-conditional-expression': [
-    true,
-    'check-else-if',
-  ],
+  'only-arrow-functions': [true, 'allow-declarations'],
+  'ordered-imports': [true, { 'grouped-imports': false }],
+  'prefer-conditional-expression': [true, 'check-else-if'],
   'prefer-const': true,
   'prefer-for-of': true,
   'prefer-object-spread': true,
@@ -146,51 +107,37 @@ module.exports.rules = {
   'prefer-switch': [
     true,
     {
-      'min-cases': 3,
-    },
+      'min-cases': 3
+    }
   ],
   'prefer-template': true,
   'promise-function-async': true,
-  'quotemark': [
-    true,
-    'single',
-    'avoid-template',
-  ],
+  'quotemark': [true, 'single', 'avoid-template', 'jsx-double'],
   'radix': true,
   'restrict-plus-operands': true,
-  'semicolon': [
-    true,
-    'always',
-  ],
+  'return-undefined': true,
+  'semicolon': [true, 'always'],
   'space-before-function-paren': [
     true,
     {
-      'anonymous': 'always',
-      'asyncArrow': 'always',
-      'constructor': 'never',
-      'method': 'never',
-      'named': 'never',
-    },
+      anonymous: 'always',
+      asyncArrow: 'always',
+      constructor: 'never',
+      method: 'never',
+      named: 'never'
+    }
   ],
-  'space-within-parens': [
-    true,
-    0,
-  ],
-  'strict-boolean-expressions': true,
+  'space-within-parens': [true, 0],
   'switch-final-break': true,
   'trailing-comma': [
-    true, {
-      'multiline': 'always',
-      'singleline': 'never',
-    },
+    true,
+    {
+      multiline: 'never',
+      singleline: 'never'
+    }
   ],
   'triple-equals': true,
-  'typedef': [
-    true,
-    'call-signature',
-    'parameter',
-    'property-declaration',
-  ],
+  'typedef': [true, 'call-signature', 'parameter', 'property-declaration'],
   'typedef-whitespace': [
     true,
     {
@@ -198,21 +145,21 @@ module.exports.rules = {
       'index-signature': 'nospace',
       'parameter': 'nospace',
       'property-declaration': 'nospace',
-      'variable-declaration': 'nospace',
+      'variable-declaration': 'nospace'
     },
     {
       'call-signature': 'onespace',
       'index-signature': 'onespace',
       'parameter': 'onespace',
       'property-declaration': 'onespace',
-      'variable-declaration': 'onespace',
-    },
+      'variable-declaration': 'onespace'
+    }
   ],
   'type-literal-delimiter': true,
   'unified-signatures': true,
   'use-default-type-parameter': true,
   'use-isnan': true,
-  'variable-name': [true, 'ban-keywords', 'check-format'],
+  'variable-name': [true, 'ban-keywords', 'check-format', 'allow-pascal-case'],
   'whitespace': [
     true,
     'check-branch',
@@ -224,6 +171,6 @@ module.exports.rules = {
     'check-type',
     'check-typecast',
     'check-type-operator',
-    'check-preblock',
-  ],
+    'check-preblock'
+  ]
 };
