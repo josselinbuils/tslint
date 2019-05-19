@@ -62,7 +62,7 @@ module.exports.rules = {
   'no-eval': true,
   'no-floating-promises': true,
   'no-for-in-array': true,
-  'no-implicit-dependencies': [true, ['@portfolio']],
+  'no-implicit-dependencies': [true, ['~']],
   'no-inferrable-types': false,
   'no-inferred-empty-object-type': true,
   'no-irregular-whitespace': true,
