@@ -1,6 +1,6 @@
 {
   "name": "@josselinbuils/tslint",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "author": "Josselin BUILS",
   "description": "My own TSLint rules.",
   "main": "index.js",
