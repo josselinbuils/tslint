@@ -61,7 +61,7 @@ module.exports.rules = {
   'no-empty-interface': true,
   'no-eval': true,
   'no-for-in-array': true,
-  'no-implicit-dependencies': [true, ['~']],
+  'no-implicit-dependencies': [true, 'dev', ['~']],
   'no-inferrable-types': false,
   'no-inferred-empty-object-type': true,
   'no-irregular-whitespace': true,
