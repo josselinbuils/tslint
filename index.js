@@ -60,7 +60,6 @@ module.exports.rules = {
   'no-empty': false,
   'no-empty-interface': true,
   'no-eval': true,
-  'no-floating-promises': true,
   'no-for-in-array': true,
   'no-implicit-dependencies': [true, ['~']],
   'no-inferrable-types': false,
@@ -69,7 +68,6 @@ module.exports.rules = {
   'no-invalid-template-strings': true,
   'no-misused-new': true,
   'no-non-null-assertion': true,
-  'no-object-literal-type-assertion': true,
   'no-redundant-jsdoc': true,
   'no-return-await': true,
   'no-shadowed-variable': true,
@@ -96,7 +94,7 @@ module.exports.rules = {
   'object-literal-shorthand': true,
   'one-line': true,
   'one-variable-per-declaration': true,
-  'only-arrow-functions': [true, 'allow-declarations'],
+  'only-arrow-functions': [true, 'allow-declarations', 'allow-named-functions'],
   'ordered-imports': [true, { 'grouped-imports': false }],
   'prefer-conditional-expression': [true, 'check-else-if'],
   'prefer-const': true,
@@ -115,8 +113,6 @@ module.exports.rules = {
   'quotemark': [true, 'single', 'avoid-template', 'jsx-double'],
   'radix': true,
   'restrict-plus-operands': true,
-  'return-undefined': true,
-  'semicolon': [true, 'always'],
   'space-before-function-paren': [
     true,
     {
