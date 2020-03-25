@@ -96,6 +96,16 @@ module.exports.rules = {
   'one-variable-per-declaration': true,
   'only-arrow-functions': [true, 'allow-declarations', 'allow-named-functions'],
   'ordered-imports': [true, { 'grouped-imports': false }],
+  'ordered-imports': [
+    true,
+    {
+      'grouped-imports': true,
+      'groups': [
+        '^((?!css).)*$',
+        'css'
+      ]
+    }
+  ],
   'prefer-conditional-expression': [true, 'check-else-if'],
   'prefer-const': true,
   'prefer-for-of': true,
