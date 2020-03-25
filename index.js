@@ -8,14 +8,11 @@ module.exports.rules = {
   'curly': true,
   'cyclomatic-complexity': true,
   'deprecation': {
-    severity: 'warn'
+    severity: 'warn',
   },
   'encoding': true,
-  'eofline': true,
   'forin': true,
   'import-blacklist': [true, 'rxjs/Rx'],
-  'import-spacing': true,
-  'indent': [true, 'spaces', 2],
   'interface-name': [true, 'never-prefix'],
   'interface-over-type-literal': true,
   'jsdoc-format': [true, 'check-multiline-start'],
@@ -23,7 +20,6 @@ module.exports.rules = {
   'match-default-export-name': false,
   'max-classes-per-file': [true, 1],
   'max-file-line-count': [true, 1500],
-  'max-line-length': [true, 120],
   'member-access': false,
   'member-ordering': [
     true,
@@ -43,15 +39,14 @@ module.exports.rules = {
         'private-constructor',
         'public-instance-method',
         'protected-instance-method',
-        'private-instance-method'
-      ]
-    }
+        'private-instance-method',
+      ],
+    },
   ],
   'new-parens': true,
   'no-arg': true,
   'no-boolean-literal-compare': true,
   'no-conditional-assignment': true,
-  'no-consecutive-blank-lines': true,
   'no-construct': true,
   'no-debugger': true,
   'no-default-export': true,
@@ -78,10 +73,9 @@ module.exports.rules = {
   'no-this-assignment': [
     true,
     {
-      'allow-destructuring': true
-    }
+      'allow-destructuring': true,
+    },
   ],
-  'no-trailing-whitespace': true,
   'no-unnecessary-callback-wrapper': true,
   'no-unnecessary-initializer': true,
   'no-unnecessary-qualifier': true,
@@ -90,21 +84,16 @@ module.exports.rules = {
   'no-use-before-declare': false,
   'no-var-keyword': true,
   'number-literal-format': true,
-  'object-literal-key-quotes': [true, 'as-needed'],
   'object-literal-shorthand': true,
   'one-line': true,
   'one-variable-per-declaration': true,
   'only-arrow-functions': [true, 'allow-declarations', 'allow-named-functions'],
-  'ordered-imports': [true, { 'grouped-imports': false }],
   'ordered-imports': [
     true,
     {
       'grouped-imports': true,
-      'groups': [
-        '^((?!css).)*$',
-        'css'
-      ]
-    }
+      'groups': ['^((?!css).)*$', 'css'],
+    },
   ],
   'prefer-conditional-expression': [true, 'check-else-if'],
   'prefer-const': true,
@@ -115,68 +104,19 @@ module.exports.rules = {
   'prefer-switch': [
     true,
     {
-      'min-cases': 3
-    }
+      'min-cases': 3,
+    },
   ],
   'prefer-template': true,
   'promise-function-async': true,
-  'quotemark': [true, 'single', 'avoid-template', 'jsx-double'],
   'radix': true,
   'restrict-plus-operands': true,
-  'space-before-function-paren': [
-    true,
-    {
-      anonymous: 'always',
-      asyncArrow: 'always',
-      constructor: 'never',
-      method: 'never',
-      named: 'never'
-    }
-  ],
-  'space-within-parens': [true, 0],
   'switch-final-break': true,
-  'trailing-comma': [
-    true,
-    {
-      multiline: 'never',
-      singleline: 'never'
-    }
-  ],
   'triple-equals': true,
   'typedef': [true, 'call-signature', 'parameter', 'property-declaration'],
-  'typedef-whitespace': [
-    true,
-    {
-      'call-signature': 'nospace',
-      'index-signature': 'nospace',
-      'parameter': 'nospace',
-      'property-declaration': 'nospace',
-      'variable-declaration': 'nospace'
-    },
-    {
-      'call-signature': 'onespace',
-      'index-signature': 'onespace',
-      'parameter': 'onespace',
-      'property-declaration': 'onespace',
-      'variable-declaration': 'onespace'
-    }
-  ],
   'type-literal-delimiter': true,
   'unified-signatures': true,
   'use-default-type-parameter': true,
   'use-isnan': true,
   'variable-name': [true, 'ban-keywords', 'check-format', 'allow-pascal-case'],
-  'whitespace': [
-    true,
-    'check-branch',
-    'check-decl',
-    'check-operator',
-    'check-module',
-    'check-separator',
-    'check-rest-spread',
-    'check-type',
-    'check-typecast',
-    'check-type-operator',
-    'check-preblock'
-  ]
 };
