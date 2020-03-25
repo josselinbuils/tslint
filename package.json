@@ -1,6 +1,6 @@
 {
   "name": "@josselinbuils/tslint",
-  "version": "5.0.0",
+  "version": "5.1.0",
   "author": "Josselin BUILS",
   "description": "My own TSLint rules.",
   "main": "index.js",
@@ -19,8 +19,5 @@
   "prettier": {
     "quoteProps": "consistent",
     "singleQuote": true
-  },
-  "devDependencies": {
-    "prettier": "^1.17.1"
   }
 }
